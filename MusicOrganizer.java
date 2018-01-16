@@ -59,4 +59,17 @@ public class MusicOrganizer
             files.remove(index);
         }
     }
+    
+    /**
+     * Check a file from the collection.
+     * @param index The index of the file to be removed.
+     */
+    public void checkIndex(int index)
+    {
+        if(index >= 0 && index < files.size()) {   
+        }
+        else{
+            System.out.println("El rango valido de valores es de 0 a " + (files.size()-1));
+        }
+    }
 }
