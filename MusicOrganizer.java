@@ -62,7 +62,6 @@ public class MusicOrganizer
     
     /**
      * Check a file from the collection.
-     * @param index The index of the file to be removed.
      */
     public void checkIndex(int index)
     {
@@ -71,5 +70,17 @@ public class MusicOrganizer
         else{
             System.out.println("El rango valido de valores es de 0 a " + (files.size()-1));
         }
+    }
+    
+    /**
+     * Check a file from the collection.
+     */
+    public boolean validIndex(int index)
+    {
+        boolean vIndex = false;
+        if(index >= 0 && index < files.size()) {   
+            vIndex = true;
+        }
+        return vIndex;
     }
 }
